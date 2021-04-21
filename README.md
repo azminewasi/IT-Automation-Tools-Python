@@ -7,3 +7,4 @@
 5. XGraphic-Automator-Automation-Tool
 6. XMail-Automation-Tool
 7. Merge 2 PDFs
+8. Png to PDF
