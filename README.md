@@ -9,3 +9,4 @@
 7. Merge 2 PDFs
 8. Png to PDF
 9. Email Extractor
+10. All filenames in subfolder to excel
