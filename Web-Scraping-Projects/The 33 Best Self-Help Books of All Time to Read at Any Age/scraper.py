@@ -137,7 +137,7 @@ for i in range(33):
     takeway_3[i]=takeway_3[i].replace(",","-")
     authors[i]=authors[i].replace(",","-")
     books[i]=authors[i].replace(",","-")
-    quotes[i]=authors[i].replace(",","-")
+    quotes[i]=quotes[i].replace(",","-")
     
 
 data={
