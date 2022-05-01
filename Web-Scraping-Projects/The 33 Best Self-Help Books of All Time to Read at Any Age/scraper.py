@@ -122,9 +122,23 @@ for book in book_temp:
     pieces = book.split(" by ")
     books.append(pieces[0].strip())
     authors.append(pieces[1].strip())
-    
-    
+       
+for i in range (len(quotes)):
+    quote=quotes[i]
+    quote.replace("“"," ")
+    quotes[i]=quote
 
+
+for i in range(33):
+    the_book_in_one_sentence[i]=the_book_in_one_sentence[i].replace(",","-")
+    why_should_you_read_it[i]=why_should_you_read_it[i].replace(",","-")
+    takeway_1[i]=takeway_1[i].replace(",","-")
+    takeway_2[i]=takeway_2[i].replace(",","-")
+    takeway_3[i]=takeway_3[i].replace(",","-")
+    authors[i]=authors[i].replace(",","-")
+    books[i]=authors[i].replace(",","-")
+    quotes[i]=authors[i].replace(",","-")
+    
 
 data={
     'name':books,
@@ -139,7 +153,11 @@ data={
 
 df = pd.DataFrame(data)
 
+
+
+
+
 print (df)
 
-df.to_excel("Data.xls")
-df.to_csv("Data.csv")
+df.to_excel("Data.xlsx")
+df.to_csv("data.csv")
