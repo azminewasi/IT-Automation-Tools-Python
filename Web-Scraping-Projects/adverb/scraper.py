@@ -3,20 +3,20 @@ import pandas as pd
 from urllib.request import Request, urlopen
 import re
 
-req = Request('https://7esl.com/english-verbs/', headers={'User-Agent': 'Mozilla/5.0'})
+req = Request('https://www.talkenglish.com/vocabulary/top-250-adverbs.aspx', headers={'User-Agent': 'Mozilla/5.0'})
 webpage = urlopen(req).read()
 
 soup = BeautifulSoup(webpage, 'html.parser')
 
-verbs= []
+adj= []
    
 #Quotes Section
-products = soup.select('ul>li')
+products = soup.select('td>a')
 for elems in products:
-    verbs.append(elems.text.strip())
+    adj.append(elems.text.strip())
 
 
-with open('verb.txt', 'w') as f:
-    for item in verbs:
+with open('your_file.txt', 'w') as f:
+    for item in adj:
         f.write("%s\n" % item)
         print(item)
