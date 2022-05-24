@@ -42,5 +42,5 @@ def convert_pdf2img(input_file: str, pages: tuple = None):
 
 if __name__ == "__main__":
     import sys
-    input_file = "0000000 - Full Book.pdf"
+    input_file = "Machine Learning Interview Cheat sheets.pdf"
     convert_pdf2img(input_file)
