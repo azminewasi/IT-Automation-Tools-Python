@@ -40,7 +40,7 @@
  - A tool to automate emails. Used email, smtplib, pandas.
 
 
-## Data and Scraping
+## Directory Automation
 
 1. All filenames in subfolder to excel
 2. All files to excel in a folder
