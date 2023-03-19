@@ -11,7 +11,7 @@ extensions = ('*.jpg','*.png','*.jpeg') #add your image extentions
 # unit : pt
 margin = 0
 
-imagelist=["0.005.jpg","0.10.png"]
+imagelist=["Dataset Obsevation.png"]
 
 for imagePath in imagelist:
     cover = Image.open(imagePath)
