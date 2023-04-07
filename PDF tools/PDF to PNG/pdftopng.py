@@ -42,5 +42,5 @@ def convert_pdf2img(input_file: str, pages: tuple = None):
 
 if __name__ == "__main__":
     import sys
-    input_file = "Machine Learning Interview Cheat sheets.pdf"
+    input_file = "_TPMAI_2023_.pdf"
     convert_pdf2img(input_file)
